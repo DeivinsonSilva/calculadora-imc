@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+    <html lang="pt-br">
+    <head>
+        <!-- ##### Required meta tags ##### -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"/>
+
+        <!-- ##### Fontes ##### -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+        <!-- ##### Javascript aqui ##### -->
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+        <!-- ##### Jquery aqui ##### -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- ##### Css aqui ##### -->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+        <link rel="stylesheet" type="text/css" href="css/radio.css">
+
+        <!-- CSS media query em um elemento de link -->
+        <link rel="stylesheet" media="(max-width: 800px)" href="css/media.css" />
+
+        <title>Calculadora IMC - Por Deivinson Silva</title>
+    </head>
+    <body>
+        <main class="parent" id="geral">
+            <header class="div1">
+                <a href="home.html"><img height="32px" src="img/logo-ness-text.svg"/></a>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Resumir</a></li>
+                        <li><a href="#">Tutorial</a></li>
+                        <li><a href="#footer">Contatos</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="div2">Ads 1</div>
+            <section class="div3">
+                Título da seção aqui!
+                <div class="div4">Div 4</div>
+                <div class="div5">Div 5</div>
+                <div class="div6">Div6
+                    <div class="conteudo">
+                    <form method="#">
+                        <div>
+                            <label>Sexo</label><br>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="radioApple" name="radioFruit" value="feminino" checked>
+                                <label for="radioApple">Feminino</label>
+                                <input type="radio" id="radioBanana" name="radioFruit" value="masculino">
+                                <label for="radioBanana">Masculino</label>
+                            </div>
+                        </div><br>
+                        <div>
+                            <label>Idade (anos)</label><br>
+                            <input type="number" placeholder="Ex.: 39">
+                        </div><br>
+                        <div>
+                            <label>Peso (kg)</label><br>
+                            <input type="text" placeholder="Ex.: 75,9">
+                        </div><br>
+                        <div>
+                            <label>Altura (metros)</label><br>
+                            <input type="text" placeholder="Ex.: 1,70"></label>
+                        </div><br>
+                        <div>
+                            <input class="botao" type="submit" value="Calcular">
+                            <input class="botao" type="submit" value="Limpar">
+                        </div>
+                    </form>
+                    </div>
+                    Seu IMC:
+                </div>
+                <div class="div7">Ads 2</div>
+                <div class="div8">Div 8</div>
+            </section>
+            <footer class="div9" id="footer">Footer<br>
+                <script>
+                    window.jQuery(document).ready(function($){
+                        var ano = new Date().getFullYear();
+                        $('.ano').text(ano);
+                    });
+                    </script>
+                    Todos os direitos reservados ® 2019 - <span class='ano'></span> Lino Processos e Tecnologia
+            </footer>
+        </main>
+    </body>
+</html>
