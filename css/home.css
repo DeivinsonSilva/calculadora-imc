@@ -37,7 +37,7 @@
 
 .div2 { grid-area: 2 / 1 / 3 / 3; 
     background: grey;
-    width: 150vh;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -46,7 +46,7 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     background: chartreuse;
-    width: auto;
+    width: 1200px;
     margin: 0 auto;
     border-radius: 5px;
 }
@@ -101,7 +101,7 @@
 
 .div4, .div5, .div6, .div7, .div8{
     border-radius: 5px;
-    width: 90vh;   
+    width: 595px;   
 }
 
 .conteudo{
