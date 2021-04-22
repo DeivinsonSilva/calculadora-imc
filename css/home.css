@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-rows: 80px 150px auto auto auto 200px;
+    grid-template-rows: 80px 150px auto auto auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
@@ -21,7 +21,7 @@
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 3; 
-    background: #041E33;
+    background: #100340;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -76,8 +76,17 @@
     background: orchid;
 }
 
-.div9 { grid-area: 6 / 1 / 7 / 3; 
-    background: #b0eefe;
+.div9 { grid-area: 6 / 1 / 7 / 3;
+    background: #b0eefe; 
+}
+
+.div9 #direitos{
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif; 
 }
 
 .menu{
@@ -136,4 +145,28 @@ input{
     width: 41vh;
     height: 5vh;
     font-size: 16px;
+}
+
+/*Formatação pelo id*/
+#mapa a{
+    color: black;
+}
+
+#rodapegeral{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#endereco p{
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+#contatos p{
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+/* Estilizando as tags*/
+h3{
+    font-family: 'Ubuntu', sans-serif;
 }
